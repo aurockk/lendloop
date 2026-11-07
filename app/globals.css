@@ -1,26 +1,199 @@
 @import "tailwindcss";
 
+/*
+ * LendLoop: the neighbourhood shadow board.
+ * Ground is perforated hardboard; tools hang as ink silhouettes over their
+ * painted outlines; white paint is where reading and forms happen; safety
+ * yellow is reserved for the primary action and active state.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --board: #b4895a;
+  --board-deep: #8e6a42; /* painted outline / shadow on the board */
+  --board-hole: #5e4426;
+  --ink: #141414;
+  --ink-soft: #2a1f12; /* secondary text on the board, tinted from the hardboard */
+  --paint: #f7f4ee;
+  --paint-line: #d9d1c3;
+  --muted: #5d5246; /* secondary text on white paint */
+  --safety: #f5c518;
+  --safety-deep: #d9a900;
+  --alert: #b3261e; /* errors only */
+  --alert-paint: #fbe3df;
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+  --font-stencil: var(--font-stencil-face), var(--font-archivo), sans-serif;
+  color-scheme: light;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-board: var(--board);
+  --color-board-deep: var(--board-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paint: var(--paint);
+  --color-paint-line: var(--paint-line);
+  --color-muted: var(--muted);
+  --color-safety: var(--safety);
+  --color-alert: var(--alert);
+  --color-alert-paint: var(--alert-paint);
+  --font-sans: var(--font-sans);
+  --font-stencil: var(--font-stencil);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--board);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  /* perforated hardboard: each hole is a dark bore with a light lower lip */
+  background-color: var(--board);
+  background-image:
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--board-hole) 70%, transparent) 0 1.9px, transparent 2.3px),
+    radial-gradient(circle at 50% 62%, transparent 0 2px, rgb(255 236 205 / 0.22) 2.2px, transparent 3.1px);
+  background-size: 28px 28px, 28px 28px;
+  background-position: 14px 14px, 14px 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--safety);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+* {
+  scrollbar-color: var(--board-deep) var(--board);
+}
+
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 2px;
+}
+
+input,
+textarea,
+select {
+  caret-color: var(--ink);
+}
+
+@utility stencil {
+  font-family: var(--font-stencil);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+}
+
+/* Buttons are painted plates on the board. */
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold uppercase tracking-wide transition-[transform,background-color,box-shadow] duration-150 disabled:cursor-not-allowed disabled:opacity-50;
+  font-stretch: 88%;
+  border-radius: 2px;
+}
+@utility btn-primary {
+  @apply btn bg-safety text-ink;
+  box-shadow: 0 1px 0 var(--safety-deep), 0 3px 8px rgb(60 40 10 / 0.28);
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 0 var(--safety-deep), 0 6px 14px rgb(60 40 10 / 0.3);
+  }
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+}
+@utility btn-ghost {
+  @apply btn bg-transparent text-ink;
+  box-shadow: inset 0 0 0 2px var(--ink);
+  &:hover:not(:disabled) {
+    background: var(--ink);
+    color: var(--paint);
+  }
+}
+@utility btn-danger {
+  @apply btn bg-transparent text-alert;
+  box-shadow: inset 0 0 0 2px var(--alert);
+  &:hover:not(:disabled) {
+    background: var(--alert);
+    color: var(--paint);
+  }
+}
+
+/* White-painted panel: where forms and longer reading happen. */
+@utility panel {
+  /* paint sits flat on the board; only its edge catches the light */
+  background: var(--paint);
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgb(60 40 10 / 0.14);
+}
+@utility card {
+  @apply panel p-5;
+}
+
+@utility input {
+  @apply w-full px-3 py-2 text-sm text-ink outline-none transition-shadow;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1.5px var(--ink-soft);
+  &:focus {
+    box-shadow: inset 0 0 0 2.5px var(--ink), 0 0 0 3px var(--safety);
+  }
+  &::placeholder {
+    color: var(--muted);
+  }
+}
+@utility label {
+  @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-muted;
+  font-stretch: 88%;
+}
+
+/* A painted name strip under a hanging tool. */
+@utility name-strip {
+  @apply inline-block bg-paint px-2 pt-1 pb-0.5 text-ink stencil;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgb(60 40 10 / 0.14);
+}
+
+/* An unperforated patch of hardboard: the holes stop where small text sits. */
+@utility solid-board {
+  background-color: var(--board);
+  border-radius: 6px;
+  /* feathered edge in the board's own colour: holes fade out instead of being sliced */
+  box-shadow: 0 0 8px 7px var(--board);
+}
+
+/* A small hand-painted label on the board (return dates, tags). */
+@utility board-label {
+  @apply inline-block bg-paint px-1.5 pt-[3px] pb-[2px] text-[11px] font-bold uppercase leading-none tracking-wider whitespace-nowrap text-ink;
+  font-stretch: 85%;
+  border-radius: 1px;
+}
+
+/* Overdue: hazard stripe, the board's only alarm. */
+@utility hazard {
+  background: repeating-linear-gradient(-45deg, var(--safety) 0 8px, var(--ink) 8px 16px);
+}
+
+@keyframes lift-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

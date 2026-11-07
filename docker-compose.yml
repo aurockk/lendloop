@@ -1,0 +1,44 @@
+# Local automation stack: n8n + Mailpit (a fake SMTP server with a web inbox).
+#   cp .env.n8n.example .env.n8n   # then fill in the two shared secrets
+#   docker compose up -d
+#   n8n:     http://localhost:5678
+#   Mailpit: http://localhost:8025   (every email n8n "sends" lands here)
+# Ports are bound to 127.0.0.1 only: the Mailpit inbox holds real-looking emails
+# and the n8n editor must not be reachable from the LAN.
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:${N8N_VERSION:-2.46.6}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5678:5678"
+    env_file: .env.n8n
+    environment:
+      GENERIC_TIMEZONE: ${TZ:-UTC}
+      TZ: ${TZ:-UTC}
+      N8N_SECURE_COOKIE: "false" # local http only; remove behind HTTPS
+      N8N_DIAGNOSTICS_ENABLED: "false"
+      # The Code nodes read the shared HMAC secrets from env vars ($env.*) and
+      # use Node's crypto module, so both have to be allowed explicitly.
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"
+      NODE_FUNCTION_ALLOW_BUILTIN: crypto
+      # Data minimisation: execution logs contain recipient emails, keep them a week.
+      EXECUTIONS_DATA_PRUNE: "true"
+      EXECUTIONS_DATA_MAX_AGE: "168"
+    extra_hosts:
+      # lets n8n reach a local `npx convex dev` backend on the host
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n/workflows:/workflows:ro
+    depends_on:
+      - mailpit
+
+  mailpit:
+    image: axllent/mailpit:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8025:8025" # web inbox
+      - "127.0.0.1:1025:1025" # SMTP
+
+volumes:
+  n8n_data:

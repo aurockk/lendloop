@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T19:10:22+00:00",
+  "title": "Design System: LendLoop",
+  "extensions": {
+    "colorMeta": {
+      "board": {
+        "role": "neutral",
+        "displayName": "Hardboard Tan",
+        "canonical": "#b4895a",
+        "tonalRamp": [
+          "#180600",
+          "#361d00",
+          "#5c3600",
+          "#7c5425",
+          "#9e7445",
+          "#c19566",
+          "#e8bb8a",
+          "#ffebd6"
+        ]
+      },
+      "board-deep": {
+        "role": "neutral",
+        "displayName": "Painted Outline",
+        "canonical": "#8e6a42",
+        "tonalRamp": [
+          "#170600",
+          "#361e00",
+          "#58380d",
+          "#78562e",
+          "#9a754d",
+          "#bd966d",
+          "#e4bc92",
+          "#ffebd6"
+        ]
+      },
+      "board-hole": {
+        "role": "neutral",
+        "displayName": "Hole Bore",
+        "canonical": "#5e4426",
+        "tonalRamp": [
+          "#170700",
+          "#351e00",
+          "#533a1c",
+          "#735839",
+          "#947758",
+          "#b69978",
+          "#ddbe9d",
+          "#feebd7"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tool Black",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Board Text",
+        "canonical": "#2a1f12",
+        "tonalRamp": [
+          "#130901",
+          "#2d2215",
+          "#493d2f",
+          "#685b4c",
+          "#887b6b",
+          "#aa9c8c",
+          "#d0c1b1",
+          "#fbecdb"
+        ]
+      },
+      "paint": {
+        "role": "neutral",
+        "displayName": "White Paint",
+        "canonical": "#f7f4ee",
+        "tonalRamp": [
+          "#0d0b07",
+          "#26241f",
+          "#423f3b",
+          "#605d58",
+          "#807d78",
+          "#a19e98",
+          "#c7c4be",
+          "#f1eee8"
+        ]
+      },
+      "paint-line": {
+        "role": "neutral",
+        "displayName": "Paint Seam",
+        "canonical": "#d9d1c3",
+        "tonalRamp": [
+          "#100a03",
+          "#292318",
+          "#453f33",
+          "#645d50",
+          "#847c6f",
+          "#a59d90",
+          "#cbc3b5",
+          "#f6eddf"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Paint Muted",
+        "canonical": "#5d5246",
+        "tonalRamp": [
+          "#120902",
+          "#2c2217",
+          "#483e32",
+          "#675b4f",
+          "#877b6e",
+          "#a89c8f",
+          "#cfc2b4",
+          "#f9ecde"
+        ]
+      },
+      "safety": {
+        "role": "primary",
+        "displayName": "Safety Yellow",
+        "canonical": "#f5c518",
+        "tonalRamp": [
+          "#120a00",
+          "#2e2300",
+          "#4e3e05",
+          "#715b14",
+          "#967a1d",
+          "#bf9a1c",
+          "#eabf37",
+          "#fdeec2"
+        ]
+      },
+      "safety-deep": {
+        "role": "primary",
+        "displayName": "Yellow Lip",
+        "canonical": "#d9a900",
+        "tonalRamp": [
+          "#130900",
+          "#2f2200",
+          "#503d02",
+          "#735a11",
+          "#997819",
+          "#c29813",
+          "#eebd31",
+          "#feedc6"
+        ]
+      },
+      "alert": {
+        "role": "tertiary",
+        "displayName": "Alert Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "#210000",
+          "#4b0101",
+          "#7a0907",
+          "#ac1d17",
+          "#d2463a",
+          "#f96a5b",
+          "#fcada1",
+          "#fee9e5"
+        ]
+      },
+      "alert-paint": {
+        "role": "tertiary",
+        "displayName": "Alert Wash",
+        "canonical": "#fbe3df",
+        "tonalRamp": [
+          "#150705",
+          "#301f1c",
+          "#4d3b38",
+          "#6c5855",
+          "#8d7874",
+          "#af9995",
+          "#d5beba",
+          "#ffe9e5"
+        ]
+      },
+      "brass-tag": {
+        "role": "tertiary",
+        "displayName": "Brass Tag",
+        "canonical": "#c9a44c",
+        "tonalRamp": [
+          "#130900",
+          "#302200",
+          "#513c01",
+          "#75590e",
+          "#9b7714",
+          "#be9940",
+          "#e5bf68",
+          "#ffedc5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Stencil Display",
+        "purpose": "The stencilled tagline on the landing board only."
+      },
+      "headline": {
+        "displayName": "Stencil Headline",
+        "purpose": "Page titles painted on the board (3rem mobile, 3.75rem from 640px)."
+      },
+      "title": {
+        "displayName": "Stencil Title",
+        "purpose": "Section heads, step titles and loan/listing names (1.5-3rem)."
+      },
+      "name-strip": {
+        "displayName": "Name Strip",
+        "purpose": "Tool names on white strips under a hanging silhouette (18-22px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Copy on the board in ink-soft and inside panels in muted (14px in panels); tabular numerals throughout."
+      },
+      "button": {
+        "displayName": "Plate Caps",
+        "purpose": "Buttons and nav links: uppercase Archivo at 88% width."
+      },
+      "label": {
+        "displayName": "Label Caps",
+        "purpose": "Board labels, badges, categories, filter tapes: uppercase Archivo at 85% width."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-edge",
+        "value": "0 0 0 1px rgb(60 40 10 / 0.14)",
+        "purpose": "Panels, cards, name strips: paint flat on the board, edge catching light."
+      },
+      {
+        "name": "plate-rest",
+        "value": "0 1px 0 var(--safety-deep), 0 3px 8px rgb(60 40 10 / 0.28)",
+        "purpose": "Primary yellow plate at rest."
+      },
+      {
+        "name": "plate-lift",
+        "value": "0 2px 0 var(--safety-deep), 0 6px 14px rgb(60 40 10 / 0.3)",
+        "purpose": "Primary plate hover, with translateY(-1px)."
+      },
+      {
+        "name": "rail",
+        "value": "0 4px 12px rgb(40 25 8 / 0.35)",
+        "purpose": "Sticky header rail only."
+      },
+      {
+        "name": "tape-lift",
+        "value": "0 2px 6px rgb(40 25 8 / 0.3)",
+        "purpose": "Active filter tape."
+      },
+      {
+        "name": "peg-glint",
+        "value": "0 1px 0 rgb(255 255 255 / 0.25)",
+        "purpose": "Pegs above a slot."
+      },
+      {
+        "name": "today-marker",
+        "value": "0 0 0 3px var(--ink), 0 2px 6px rgb(40 25 8 / 0.4)",
+        "purpose": "Ink ring and drop under the yellow today marker on the date rail."
+      },
+      {
+        "name": "patch-feather",
+        "value": "0 0 8px 7px var(--board)",
+        "purpose": "Solid-board patches: holes fade out instead of being sliced."
+      },
+      {
+        "name": "input-focus",
+        "value": "inset 0 0 0 2.5px var(--ink), 0 0 0 3px var(--safety)",
+        "purpose": "Focused input: thick ink stroke and safety halo."
+      },
+      {
+        "name": "focus-outline",
+        "value": "outline: 3px solid var(--ink); outline-offset: 3px",
+        "purpose": "Global :focus-visible treatment."
+      }
+    ],
+    "motion": [
+      {
+        "name": "plate",
+        "value": "150ms (transform, background-color, box-shadow)",
+        "purpose": "Button and tape state transitions."
+      },
+      {
+        "name": "hang-lift",
+        "value": "300ms ease-out; translate(-9%,-9%) to translate(-13%,-16%)",
+        "purpose": "A hanging tool lifting off its outline on hover, focus-within or press."
+      },
+      {
+        "name": "lift-in",
+        "value": "0.6s cubic-bezier(.2,.7,.2,1); opacity 0 + translateY(6px) to rest",
+        "purpose": "The landing tagline's entrance only."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition/animation-duration: 0.01ms",
+        "purpose": "prefers-reduced-motion collapses all motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "textures": [
+      {
+        "name": "perforated-hardboard",
+        "value": "radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--board-hole) 70%, transparent) 0 1.9px, transparent 2.3px), radial-gradient(circle at 50% 62%, transparent 0 2px, rgb(255 236 205 / 0.22) 2.2px, transparent 3.1px); size 28px; offset 14px",
+        "purpose": "Body ground on every page."
+      },
+      {
+        "name": "hazard",
+        "value": "repeating-linear-gradient(-45deg, var(--safety) 0 8px, var(--ink) 8px 16px)",
+        "purpose": "Overdue only: badge frame, overdue board label, late date rail."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Plate",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Safety-yellow painted plate for the one next action on a view.",
+      "html": "<button class=\"ds-btn-primary\">Ask to borrow</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:8px 16px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.025em;font-stretch:88%;border:none;border-radius:2px;cursor:pointer;transition:transform 150ms,background-color 150ms,box-shadow 150ms;background:var(--safety,#f5c518);color:var(--ink,#141414);box-shadow:0 1px 0 var(--safety-deep,#d9a900),0 3px 8px rgb(60 40 10 / 0.28);} .ds-btn-primary:hover{transform:translateY(-1px);box-shadow:0 2px 0 var(--safety-deep,#d9a900),0 6px 14px rgb(60 40 10 / 0.3);} .ds-btn-primary:active{transform:translateY(0);} .ds-btn-primary:focus-visible{outline:3px solid var(--ink,#141414);outline-offset:3px;}"
+    },
+    {
+      "name": "Ghost Plate",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action: 2px inset ink stroke, fills ink on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Cancel</button>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:8px 16px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.025em;font-stretch:88%;border:none;border-radius:2px;cursor:pointer;transition:transform 150ms,background-color 150ms,box-shadow 150ms;background:transparent;color:var(--ink,#141414);box-shadow:inset 0 0 0 2px var(--ink,#141414);} .ds-btn-ghost:hover{background:var(--ink,#141414);color:var(--paint,#f7f4ee);} .ds-btn-ghost:focus-visible{outline:3px solid var(--ink,#141414);outline-offset:3px;}"
+    },
+    {
+      "name": "Danger Plate",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive action only: alert stroke, fills alert on hover.",
+      "html": "<button class=\"ds-btn-danger\">Remove</button>",
+      "css": ".ds-btn-danger{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:8px 16px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.025em;font-stretch:88%;border:none;border-radius:2px;cursor:pointer;transition:transform 150ms,background-color 150ms,box-shadow 150ms;background:transparent;color:var(--alert,#b3261e);box-shadow:inset 0 0 0 2px var(--alert,#b3261e);} .ds-btn-danger:hover{background:var(--alert,#b3261e);color:var(--paint,#f7f4ee);} .ds-btn-danger:focus-visible{outline:3px solid var(--ink,#141414);outline-offset:3px;}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled text field on white paint: inset ink-soft stroke, yellow halo on focus.",
+      "html": "<div class=\"ds-field-wrap\"><label class=\"ds-field\"><span class=\"ds-label\">Note for the lender (optional)</span><input class=\"ds-input\" placeholder=\"e.g. Hanging shelves this weekend\"></label></div>",
+      "css": ".ds-field-wrap{background:var(--paint,#f7f4ee);padding:16px;border-radius:2px;box-shadow:0 0 0 1px rgb(60 40 10 / 0.14);max-width:360px;} .ds-field{display:block;} .ds-label{display:block;margin-bottom:4px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.025em;font-stretch:88%;color:var(--muted,#5d5246);} .ds-input{width:100%;padding:8px 12px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:14px;color:var(--ink,#141414);background:#fff;border:none;border-radius:2px;outline:none;box-shadow:inset 0 0 0 1.5px var(--ink-soft,#2a1f12);transition:box-shadow 150ms;} .ds-input::placeholder{color:var(--muted,#5d5246);} .ds-input:focus{box-shadow:inset 0 0 0 2.5px var(--ink,#141414),0 0 0 3px var(--safety,#f5c518);}"
+    },
+    {
+      "name": "Header Rail",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Black top cleat with the yellow stencil wordmark; active link is a yellow plate.",
+      "html": "<header class=\"ds-rail\"><span class=\"ds-wordmark\">LendLoop</span><nav class=\"ds-nav\"><a class=\"ds-nav-link ds-nav-active\" href=\"#\" aria-current=\"page\">All tools</a><a class=\"ds-nav-link\" href=\"#\">My listings</a><a class=\"ds-nav-link\" href=\"#\">My requests</a><a class=\"ds-nav-link\" href=\"#\">Incoming</a></nav></header>",
+      "css": ".ds-rail{display:flex;align-items:center;gap:32px;padding:10px 32px;background:var(--ink,#141414);color:var(--paint,#f7f4ee);box-shadow:0 4px 12px rgb(40 25 8 / 0.35);} .ds-wordmark{font-family:var(--font-stencil, 'Big Shoulders Stencil', 'Archivo', sans-serif);font-size:28px;font-weight:900;text-transform:uppercase;letter-spacing:0.01em;line-height:0.92;color:var(--safety,#f5c518);} .ds-nav{display:flex;gap:4px;} .ds-nav-link{padding:6px 12px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.025em;font-stretch:88%;color:rgb(247 244 238 / 0.8);text-decoration:none;border-radius:2px;transition:background-color 150ms,color 150ms;} .ds-nav-link:hover{background:rgb(247 244 238 / 0.1);color:var(--paint,#f7f4ee);} .ds-nav-link:focus-visible{outline:3px solid var(--paint,#f7f4ee);outline-offset:3px;} .ds-nav-active,.ds-nav-active:hover{background:var(--safety,#f5c518);color:var(--ink,#141414);}"
+    },
+    {
+      "name": "Filter Tapes",
+      "kind": "chip",
+      "refersTo": "filter-tape",
+      "description": "Painted label tapes for category filters; the active tape is yellow.",
+      "html": "<div class=\"ds-tapes\"><button class=\"ds-tape ds-tape-active\" aria-pressed=\"true\">All</button><button class=\"ds-tape\" aria-pressed=\"false\">Power tools</button><button class=\"ds-tape\" aria-pressed=\"false\">Garden</button></div>",
+      "css": ".ds-tapes{display:flex;flex-wrap:wrap;gap:8px;padding:16px;background:var(--board,#b4895a);} .ds-tape{padding:6px 10px 4px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-stretch:85%;color:var(--ink,#141414);background:rgb(247 244 238 / 0.85);border:none;border-radius:1px;cursor:pointer;transition:background-color 150ms;} .ds-tape:hover{background:var(--paint,#f7f4ee);} .ds-tape:focus-visible{outline:3px solid var(--ink,#141414);outline-offset:3px;} .ds-tape-active,.ds-tape-active:hover{background:var(--safety,#f5c518);box-shadow:0 2px 6px rgb(40 25 8 / 0.3);}"
+    },
+    {
+      "name": "Status Badges",
+      "kind": "chip",
+      "refersTo": "badge-pending",
+      "description": "Narrow-caps painted labels for loan status; overdue is the hazard stripe.",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-badge ds-b-safety\">Pending</span><span class=\"ds-badge ds-b-ink\">Out on loan</span><span class=\"ds-badge ds-b-neutral\">Back on the board</span><span class=\"ds-badge ds-b-hazard\"><span>Overdue</span></span><span class=\"ds-badge ds-b-brass\"><svg viewBox=\"0 0 12 12\" width=\"10\" height=\"10\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M4.6 9.2L1.4 6l1.2-1.2 2 2 4.8-4.8L10.6 3.2z\"/></svg>Trusted lender</span></div>",
+      "css": ".ds-badges{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:16px;background:var(--paint,#f7f4ee);} .ds-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 6px 2px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:11px;font-weight:700;line-height:1;text-transform:uppercase;letter-spacing:0.05em;font-stretch:85%;border-radius:1px;} .ds-b-safety{background:var(--safety,#f5c518);color:var(--ink,#141414);} .ds-b-ink{background:var(--ink,#141414);color:var(--paint,#f7f4ee);} .ds-b-neutral{color:var(--ink-soft,#2a1f12);box-shadow:inset 0 0 0 1.5px var(--ink-soft,#2a1f12);} .ds-b-hazard{padding:3px;background:repeating-linear-gradient(-45deg,var(--safety,#f5c518) 0 8px,var(--ink,#141414) 8px 16px);} .ds-b-hazard>span{background:var(--ink,#141414);color:var(--safety,#f5c518);padding:2px 4px 1px;} .ds-b-brass{background:#c9a44c;color:var(--ink,#141414);border-radius:1px 6px 6px 1px;}"
+    },
+    {
+      "name": "Board Slot",
+      "kind": "custom",
+      "refersTo": "name-strip",
+      "description": "Signature: a tool silhouette hanging over its painted outline on perforated board, with stencil name strip and details on a feathered patch; lifts on hover.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-slot\" tabindex=\"0\"><div class=\"ds-hang\"><span class=\"ds-pegs\"><i></i><i></i></span><svg class=\"ds-outline\" viewBox=\"0 0 64 64\" fill=\"currentColor\"><path d=\"M13 10h29a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H13a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3z\"/><path d=\"M45 12l11-5-2 10-9 3z\"/><rect x=\"24\" y=\"24\" width=\"8\" height=\"34\" rx=\"3\"/></svg><svg class=\"ds-tool\" viewBox=\"0 0 64 64\" fill=\"currentColor\"><path d=\"M13 10h29a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H13a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3z\"/><path d=\"M45 12l11-5-2 10-9 3z\"/><rect x=\"24\" y=\"24\" width=\"8\" height=\"34\" rx=\"3\"/></svg></div><span class=\"ds-name\">Claw hammer</span><p class=\"ds-patch\">Hand tools &middot; Good</p></div><div class=\"ds-slot\"><div class=\"ds-hang\"><span class=\"ds-pegs\"><i></i><i></i></span><svg class=\"ds-outline\" viewBox=\"0 0 64 64\" fill=\"currentColor\"><rect x=\"15\" y=\"4\" width=\"5\" height=\"56\" rx=\"1\"/><rect x=\"44\" y=\"4\" width=\"5\" height=\"56\" rx=\"1\"/><rect x=\"20\" y=\"11\" width=\"24\" height=\"4\"/><rect x=\"20\" y=\"23\" width=\"24\" height=\"4\"/><rect x=\"20\" y=\"35\" width=\"24\" height=\"4\"/><rect x=\"20\" y=\"47\" width=\"24\" height=\"4\"/></svg><span class=\"ds-back\">Back Nov 12</span></div><span class=\"ds-name\">Step ladder</span><p class=\"ds-patch\">Ladders &amp; access &middot; Fair</p></div></div>",
+      "css": ".ds-board{display:flex;gap:48px;justify-content:center;padding:40px 32px;background-color:var(--board,#b4895a);background-image:radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--board-hole,#5e4426) 70%,transparent) 0 1.9px,transparent 2.3px),radial-gradient(circle at 50% 62%,transparent 0 2px,rgb(255 236 205 / 0.22) 2.2px,transparent 3.1px);background-size:28px 28px;background-position:14px 14px;} .ds-slot{display:flex;flex-direction:column;align-items:center;text-align:center;outline:none;} .ds-slot:focus-visible{outline:3px solid var(--ink,#141414);outline-offset:3px;} .ds-hang{position:relative;width:112px;height:112px;} .ds-pegs{position:absolute;top:-4px;left:50%;transform:translateX(-50%);display:flex;gap:12px;} .ds-pegs i{width:6px;height:6px;border-radius:9999px;background:rgb(20 20 20 / 0.8);box-shadow:0 1px 0 rgb(255 255 255 / 0.25);} .ds-outline,.ds-tool{position:absolute;inset:0;width:100%;height:100%;} .ds-outline{color:var(--board-deep,#8e6a42);} .ds-tool{color:var(--ink,#141414);transform:translate(-9%,-9%);transition:transform 300ms ease-out;} .ds-slot:hover .ds-tool,.ds-slot:focus-visible .ds-tool{transform:translate(-13%,-16%);} .ds-back{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--paint,#f7f4ee);color:var(--ink,#141414);padding:3px 6px 2px;font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:11px;font-weight:700;line-height:1;text-transform:uppercase;letter-spacing:0.05em;font-stretch:85%;border-radius:1px;} .ds-name{margin-top:8px;display:inline-block;background:var(--paint,#f7f4ee);color:var(--ink,#141414);padding:4px 8px 2px;font-family:var(--font-stencil, 'Big Shoulders Stencil', 'Archivo', sans-serif);font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:0.01em;line-height:0.92;border-radius:1px;box-shadow:0 0 0 1px rgb(60 40 10 / 0.14);} .ds-patch{margin:4px 0 0;padding:4px 10px;background:var(--board,#b4895a);border-radius:6px;box-shadow:0 0 8px 7px var(--board,#b4895a);font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-stretch:85%;color:var(--ink-soft,#2a1f12);} @media (prefers-reduced-motion: reduce){.ds-tool{transition:none;}}"
+    },
+    {
+      "name": "Loan Strip",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Signature: a white-paint loan panel with stencil name, status badge, and the date rail with a yellow today marker.",
+      "html": "<div class=\"ds-loan\"><div class=\"ds-loan-head\"><h3 class=\"ds-loan-name\">Cordless drill</h3><span class=\"ds-loan-badge\">Out on loan</span></div><div class=\"ds-loan-who\">From Marta</div><div class=\"ds-rail-wrap\"><div class=\"ds-rail-track\"><span class=\"ds-rail-bar\"></span><span class=\"ds-tick ds-tick-l\"></span><span class=\"ds-tick ds-tick-r\"></span><span class=\"ds-today\" style=\"left:40%\"></span></div><div class=\"ds-rail-dates\"><span>Nov 10</span><span class=\"ds-rail-note\">3 days left</span><span>Nov 14</span></div></div></div>",
+      "css": ".ds-loan{max-width:520px;padding:20px;background:var(--paint,#f7f4ee);border-radius:2px;box-shadow:0 0 0 1px rgb(60 40 10 / 0.14);font-family:var(--font-sans, 'Archivo', system-ui, sans-serif);color:var(--ink,#141414);} .ds-loan-head{display:flex;align-items:center;gap:10px;} .ds-loan-name{margin:0;font-family:var(--font-stencil, 'Big Shoulders Stencil', 'Archivo', sans-serif);font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:0.01em;line-height:0.92;} .ds-loan-badge{background:var(--ink,#141414);color:var(--paint,#f7f4ee);padding:3px 6px 2px;font-size:11px;font-weight:700;line-height:1;text-transform:uppercase;letter-spacing:0.05em;font-stretch:85%;border-radius:1px;} .ds-loan-who{margin-top:4px;font-size:14px;font-weight:500;color:var(--muted,#5d5246);} .ds-rail-wrap{margin-top:16px;} .ds-rail-track{position:relative;height:20px;} .ds-rail-bar{position:absolute;left:0;right:0;top:50%;height:5px;transform:translateY(-50%);background:rgb(20 20 20 / 0.85);border-radius:1px;} .ds-tick{position:absolute;top:50%;width:3px;height:12px;transform:translateY(-50%);background:var(--ink,#141414);} .ds-tick-l{left:0;} .ds-tick-r{right:0;} .ds-today{position:absolute;top:50%;width:20px;height:20px;transform:translate(-50%,-50%);border-radius:9999px;background:var(--safety,#f5c518);box-shadow:0 0 0 3px var(--ink,#141414),0 2px 6px rgb(40 25 8 / 0.4);} .ds-rail-dates{margin-top:6px;display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--muted,#5d5246);font-variant-numeric:tabular-nums;} .ds-rail-note{color:var(--ink,#141414);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Shadow Board",
+    "overview": "LendLoop is the neighbourhood's tool wall. The whole page is a sheet of perforated hardboard; every tool hangs as an ink-black silhouette over its own painted outline, and when a tool is out on loan only the outline remains, with a small painted label saying when it comes back. Meaning is carried by the board itself: hanging means home, outline means out, a yellow tag means you asked.\n\nThe system is built from workshop materials, not interface chrome. White paint is applied where reading and forms happen (panels, name strips, labels); black is the rail the board hangs from (the header) and the paint tools are cut from; safety yellow is the one bright paint, kept for the thing to do next and for what is active. Headlines are stencilled straight onto the board in a heavy stencil face; everything operational is set in a slightly condensed grotesque so the board stays quick to scan. Density is moderate: the catalogue is a three-column wall of hanging tools, loans are full-width white strips.\n\nIt is a single light world. There is no dark theme: the board is a physical object under workshop light. It refuses the marketplace grid of photo cards on white.",
+    "keyCharacteristics": [
+      "Perforated hardboard ground with a regular 28px hole grid across every page.",
+      "Tools are silhouettes over painted outlines; state is read from the board, not from chips alone.",
+      "Painted plates with near-square corners (1-2px), never soft rounded cards.",
+      "One bright paint (safety yellow) for the next action and active states.",
+      "Stencil display for anything painted on the board; condensed Archivo for UI.",
+      "Light only; depth is paint thickness and hanging lift, not floating layers."
+    ],
+    "rules": [
+      {
+        "name": "The One Bright Paint Rule",
+        "body": "Safety yellow marks the next action or the active and own state. It is never a decorative fill, a section background, or an illustration colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Red Means Wrong Rule",
+        "body": "Alert red appears only for errors, failures, lateness, and destructive actions. Overdue on the board itself is the hazard stripe, not red.",
+        "section": "colors"
+      },
+      {
+        "name": "The Light Workshop Rule",
+        "body": "One light theme. Do not add a dark palette; the board is a physical object.",
+        "section": "colors"
+      },
+      {
+        "name": "The Painted-On Rule",
+        "body": "Stencil is for things painted on the board or on a strip: the tagline, page and section titles, tool and loan names, the wordmark. Never stencil for body copy, buttons, form text, or labels.",
+        "section": "typography"
+      },
+      {
+        "name": "The Narrow Caps Rule",
+        "body": "Every uppercase UI string uses Archivo narrowed (85% for labels, 88% for buttons and nav) with positive tracking. Mixed-case body text stays at normal width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hanging Lift Rule",
+        "body": "The only thing that moves in depth is a hanging tool (or the primary plate). Panels never lift on hover.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Quiet Patch Rule",
+        "body": "Small metadata on the board (11-13px category lines, legend captions, tool details) sits on an unperforated, feathered patch of board colour so holes never run through it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put every page on the perforated hardboard (28px hole pitch) and keep white paint for panels, strips and labels where reading or forms happen.",
+      "Do show a tool's state on the board: silhouette hanging for home, outline plus a dated label for out, hazard stripe for overdue.",
+      "Do set small metadata on the board on a feathered solid-board patch (`0 0 8px 7px` in board colour).",
+      "Do keep corners at 1px for strips and 2px for plates and panels.",
+      "Do use narrow caps Archivo (85-88% width) for every label, badge, button and nav link.",
+      "Do draw strokes as inset box-shadows and keep all shadows warm brown.",
+      "Do honour reduced motion: transitions and the tagline's lift-in collapse to near zero."
+    ],
+    "donts": [
+      "Don't build a marketplace grid of photo cards on white.",
+      "Don't use safety yellow as decoration or a section fill; it marks the next action and the active or own state.",
+      "Don't use alert red for anything but errors, failures, lateness and destructive actions.",
+      "Don't set body copy, buttons or form text in the stencil face.",
+      "Don't use soft rounded cards or pill buttons; circles are for pegs, holes and the today marker.",
+      "Don't let an outline carry state alone; it always has its label.",
+      "Don't add a dark theme."
+    ]
+  }
+}
