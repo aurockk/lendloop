@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // The app is client-rendered against Convex's realtime queries; Cache
+  // Components would only add Suspense boundaries around Clerk for no gain.
   turbopack: {
     rules: {
       "*.css": {
