@@ -1,0 +1,111 @@
+{
+  "title": "Choose the visual world for LendLoop",
+  "question": "The roll assigned The Key Cabinet. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Key Cabinet",
+      "kicker": "THE ROLL",
+      "lineage": "a building super's key cabinet: enamelled steel, numbered hook rows, coloured card tags, embossed label tape",
+      "thesis": "Every tool is a tag on a numbered hook; an empty hook means it is out on loan.",
+      "palette": ["#22403C", "#E2492F", "#F2B32A", "#2F5BD3", "#7FD1A8", "#111111", "#C9A44C"],
+      "materials": ["powder-coated steel", "coloured card tags with eyelets", "embossed label tape", "brass split rings"],
+      "viewport": "The cabinet opens edge to edge: the tagline punched as embossed tape strips on the inside door, the live tool list hanging as colour-coded tags on a numbered hook rail, the sign-in action as a key fob.",
+      "risk": "Tag colour coding can get noisy if more than one colour per category creeps in.",
+      "raised": [
+        {"from": "challenger-hypercard", "raise": "State is physical, not a badge: requested tags get punched, out-on-loan leaves an empty hook."},
+        {"from": "challenger-steprow", "raise": "Every loan carries one unbroken date rail with a marker on today."},
+        {"from": "challenger-rebel", "raise": "Selection is decisive: the active filter tape inverts completely."},
+        {"from": "challenger-highlife", "raise": "Type carries the opening: the tagline is the hero, no illustration."},
+        {"from": "challenger-bazaar", "raise": "Each tag keeps its story: the back of the tag lists its notifications and reminders."},
+        {"from": "challenger-sun", "raise": "One long horizontal hook rail organises every page."}
+      ],
+      "html": ".impeccable/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "The Shadow Board",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "tool-library pegboards with each tool's outline painted where it hangs",
+      "thesis": "A painted silhouette shows where each tool lives, and when it is missing.",
+      "palette": ["#B4895A", "#F5C518", "#141414", "#F7F4EE"],
+      "materials": ["perforated hardboard", "painted outlines", "steel hooks"],
+      "viewport": "A pegboard wall fills the screen, tools drawn as silhouettes in their painted outlines, the tagline stencilled above.",
+      "risk": "The familiar workshop look; needs a silhouette drawn for every tool type, and hardboard brown can read dated.",
+      "html": ".impeccable/decision/pick.html"
+    },
+    {
+      "id": "challenger-hypercard", "label": "HyperCard Shoebox", "verdict": "declined",
+      "lineage": "black-and-white HyperCard stacks",
+      "thesis": "The board as a stack of one-bit cards you browse and edit in place.",
+      "palette": ["#000000", "#FFFFFF"], "materials": ["one-bit dither", "painted buttons"],
+      "viewport": "A fixed card with painted buttons linking to each view.",
+      "risk": "Reads as retro tech, not as a neighbourhood.",
+      "case": "Fuses poorly: neighbours don't identify with a 1987 Mac stack, and dithered states cost clarity.",
+      "kept": "States expressed physically, without extra colour."
+    },
+    {
+      "id": "challenger-steprow", "label": "Rhythm Machine Step Row", "verdict": "declined",
+      "lineage": "early-80s drum machine step rows",
+      "thesis": "Loan dates punched into a 16-step row under a chase light.",
+      "palette": ["#2A2A2A", "#E0412F", "#F28C28", "#F5D23C"], "materials": ["silkscreen panel", "LED keys"],
+      "viewport": "A step row as the date picker, tempo readout as today.",
+      "risk": "A music instrument metaphor confuses a lending task.",
+      "case": "Fuses poorly: nobody expects to borrow a ladder on a sequencer.",
+      "kept": "One unbroken timeline with now always marked."
+    },
+    {
+      "id": "challenger-rebel", "label": "Rebel Menu Collage", "verdict": "declined",
+      "lineage": "red-black-white stylish game menus",
+      "thesis": "Every view a torn-paper splash at reckless angles.",
+      "palette": ["#D7191C", "#000000", "#FFFFFF"], "materials": ["torn paper", "halftone"],
+      "viewport": "Scarlet field with sheared italic options.",
+      "risk": "Too aggressive and too playful for a job assignment.",
+      "case": "Fuses poorly: fails both 'not childish' and 'easy to use'.",
+      "kept": "Decisive selection: the chosen option flips completely."
+    },
+    {
+      "id": "challenger-highlife", "label": "Highlife Record Sleeve", "verdict": "declined",
+      "lineage": "hand-lettered West African record sleeves",
+      "thesis": "Tools presented like bandleaders on painted sleeves.",
+      "palette": ["#F28C28", "#2E8B57", "#E23D50", "#F4E9D2"], "materials": ["brush lettering", "cut-out portraits"],
+      "viewport": "Arched hand-brushed LendLoop over a colour field.",
+      "risk": "Needs portrait imagery the product does not have.",
+      "case": "Fuses poorly: no portraits exist, and the music frame hides the offer.",
+      "kept": "Type as the hero of the opening."
+    },
+    {
+      "id": "challenger-bazaar", "label": "Moon-Shadow Bazaar", "verdict": "declined",
+      "lineage": "a surreal night market",
+      "thesis": "Tools traded like shadows down a moonlit lane.",
+      "palette": ["#0E1726", "#2A2F3A", "#C99A3B", "#E8EEF5"], "materials": ["stall canvas", "chalked tickets"],
+      "viewport": "A dark lane of stalls, each tool a tagged shadow.",
+      "risk": "Dreamlike mood undercuts trust and scanability.",
+      "case": "Fuses poorly: surreal framing loses neighbours and reviewers alike.",
+      "kept": "Every item keeps its ticket of origin and story attached."
+    },
+    {
+      "id": "challenger-sun", "label": "Indoor Weather Sun", "verdict": "declined",
+      "lineage": "an amber installation hall with a mirrored ceiling",
+      "thesis": "One vast amber hall walked toward a half sun.",
+      "palette": ["#E8A23A", "#1A1208", "#F6C66B"], "materials": ["haze", "mirror"],
+      "viewport": "An amber horizon band with silhouettes as items.",
+      "risk": "Atmosphere without a task; amber duotone kills category colour.",
+      "case": "Fuses poorly: beautiful, but nothing in it is about lending.",
+      "kept": "One long horizontal axis that organises the page."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code"},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A peer-to-peer marketplace grid, executed impeccably.",
+    "palette": ["#FFFFFF", "#111827", "#16A34A"],
+    "materials": ["clean grid", "listing cards", "product photography"],
+    "viewport": "Headline and search on top, a grid of listing cards below.",
+    "risk": "Indistinguishable from every other submission by design.",
+    "html": ".impeccable/decision/canon.html"
+  },
+  "steer": true
+}
