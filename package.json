@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "dev:convex": "convex dev",
-    "typecheck": "tsc --noEmit && tsc --noEmit -p convex",
+    "typecheck": "next typegen && tsc --noEmit && tsc --noEmit -p convex",
     "n8n:up": "docker compose up -d",
     "n8n:setup": "./n8n/setup.sh",
     "test": "vitest run"
